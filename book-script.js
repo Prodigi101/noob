@@ -1,3 +1,20 @@
+// Pop-up Modal Control
+window.addEventListener('load', function() {
+    const modal = document.getElementById('bookModal');
+    
+    // Close when clicking anywhere
+    modal.addEventListener('click', function() {
+        modal.classList.add('hidden');
+    });
+    
+    // Close when pressing Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modal.classList.add('hidden');
+        }
+    });
+});
+
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby5vkTbOl2egEzVvO6UWcL9zebrC0fP5_RyjBesSVdfnhv-B7Wbjwta2PJdiaeaa3UBfw/exec';
 
 document.getElementById('signupForm').addEventListener('submit', function(e) {
