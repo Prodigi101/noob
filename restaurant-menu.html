@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu - Mr. Breakfast Jamaica</title>
+    <link rel="stylesheet" href="restaurant-style.css">
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>MR. BREAKFAST</h1>
+                <p class="tagline">Lunch & Dinner</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="restaurant-home.html">HOME</a></li>
+                <li><a href="restaurant-menu.html">MENU</a></li>
+                <li><a href="restaurant-home.html#about">ABOUT</a></li>
+                <li><a href="restaurant-home.html#contact">CONTACT</a></li>
+                <li><a href="restaurant-cart.html" class="cart-link">
+                    🛒 CART (<span id="cart-count">0</span>)
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Add this after the navbar -->
+<div class="whatsapp-quick-order">
+    <a href="https://wa.me/876XXXXXXX?text=Hi!%20I%27d%20like%20to%20place%20an%20order" 
+       class="whatsapp-btn" 
+       target="_blank">
+        <span class="whatsapp-icon">💬</span>
+        Order via WhatsApp
+    </a>
+</div>
+    <div class="menu-container">
+        <h1 class="menu-title">Our Menu</h1>
+
+        <!-- Breakfast Category -->
+        <section class="menu-category" id="breakfast">
+            <h2>🥞 Breakfast Cakes, Waffles & Breads</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=400" alt="Pancakes">
+                    <h3>Classic Pancakes</h3>
+                    <p class="description">Fluffy pancakes served with butter and syrup</p>
+                    <p class="price">$800 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Classic Pancakes', 800)">Add to Cart</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400" alt="Waffles">
+                    <h3>Belgian Waffles</h3>
+                    <p class="description">Crispy waffles with whipped cream and fruits</p>
+                    <p class="price">$900 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Belgian Waffles', 900)">Add to Cart</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="French Toast">
+                    <h3>French Toast</h3>
+                    <p class="description">Golden brown toast with cinnamon sugar</p>
+                    <p class="price">$750 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('French Toast', 750)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combos Category -->
+        <section class="menu-category" id="combos">
+            <h2>🍔 Mr. B Value Combos - Best Seller!</h2>
+            <div class="menu-grid">
+                <div class="menu-item featured">
+                    <div class="badge">BEST SELLER</div>
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400" alt="Combo Meal">
+                    <h3>Mr. B Special Combo</h3>
+                    <p class="description">Burger, fries, and drink</p>
+                    <p class="price">$1,500 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Mr. B Special Combo', 1500)">Add to Cart</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400" alt="Chicken Combo">
+                    <h3>Chicken Deluxe Combo</h3>
+                    <p class="description">Fried chicken, rice & peas, coleslaw</p>
+                    <p class="price">$1,800 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Chicken Deluxe Combo', 1800)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eggs Category -->
+        <section class="menu-category" id="eggs">
+            <h2>🍳 Omelettes & Eggs</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400" alt="Omelette">
+                    <h3>Cheese Omelette</h3>
+                    <p class="description">3-egg omelette with cheddar cheese</p>
+                    <p class="price">$950 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Cheese Omelette', 950)">Add to Cart</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400" alt="Scrambled Eggs">
+                    <h3>Scrambled Eggs Plate</h3>
+                    <p class="description">Scrambled eggs with toast and bacon</p>
+                    <p class="price">$1,100 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Scrambled Eggs Plate', 1100)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wraps Category -->
+        <section class="menu-category" id="wraps">
+            <h2>🌯 Wraps & Salads</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400" alt="Wrap">
+                    <h3>Chicken Caesar Wrap</h3>
+                    <p class="description">Grilled chicken with caesar dressing</p>
+                    <p class="price">$1,200 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Chicken Caesar Wrap', 1200)">Add to Cart</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Salad">
+                    <h3>Garden Fresh Salad</h3>
+                    <p class="description">Mixed greens with house dressing</p>
+                    <p class="price">$850 JMD</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Garden Fresh Salad', 850)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Mr. Breakfast Jamaica. All rights reserved.</p>
+    </footer>
+
+    <script src="restaurant-cart.js"></script>
+</body>
+</html>
