@@ -1,0 +1,81 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #1fd82c;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li {
+    color: #27ae60;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}button {
+    font-size: 18px;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #229954;
+    transform: scale(1.05);
+}<a href="https://www.google.com" target="_blank">
+    <button class="btn">Visit Google</button>
+</a>
